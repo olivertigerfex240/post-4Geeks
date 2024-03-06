@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Postcard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para los input y textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border: none; /* Elimina el borde predeterminado */
+            border-bottom: 1px solid #ccc; /* Añade un borde inferior */
+            padding: 5px 0; /* Espacio interior */
+            margin-bottom: 10px; /* Espacio entre los elementos */
+            width: 50%; /* Ancho del 50% */
+        }
+        
+        /* Estilos adicionales para el textarea */
+        textarea {
+            resize: none; /* Deshabilita la capacidad de cambiar el tamaño */
+        }
+        
+        /* Estilos para el contenedor de los primeros párrafos */
+        .text-container {
+            float: left; /* Hace que el contenedor flote a la izquierda */
+            width: 50%; /* Ancho del 50% */
+        }
+        .input-container{
+          float: left; 
+            margin-left:-710px; /* Ajusta el margen derecho */
+        }
+        .form-wrapper{
+          text-align: center;
+          padding-top: 20px; /* Ajusta el espacio en la parte superior */
+            clear: both; /* Limpia los flotantes */
+            margin-top: 20px; /* Mueve hacia abajo */
+            margin-left: -1380px; /* Mueve hacia la izquierda */
+        }
+        .submit-button {
+            padding: 10px 20px; /* Ajusta el espacio dentro del botón */
+            border: none; /* Elimina el borde */
+            background-color: #ddd; /* Color de fondo grisáceo */
+            color: #333; /* Color de texto */
+            border-radius: 5px; /* Borde redondeado */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra */
+            transition: all 0.3s ease; /* Transición suave */
+        }
+        .submit-button:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+            background-color: #ccc; /* Color de fondo grisáceo más claro */
+            color: #222; /* Color de texto más oscuro */
+        }
+
+        /* Estilos para el párrafo */
+        p {
+            font-family: Arial, sans-serif; /* Fuente */
+            font-size: 16px; /* Tamaño de la fuente */
+            color: #333; /* Color del texto */
+            line-height: 1.5; /* Altura de línea */
+        }
+
+        /* Estilos para el encabezado */
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
+            font-size: 24px; /* Tamaño de la fuente */
+            color: #555; /* Color del texto */
+            font-weight: bold; /* Peso de la fuente */
+        }
+    </style>
+</head>
+<body>
+    <div class="postcard">
+        <div class="front">
+            <h1>My Postcard</h1>
+            <img src="Postcardimage.png" alt="My Image" class="image">
+            <style>
+              .image {
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 10px;
+                left: 480px;
+              }
+            
+            </style>     
+            <div class="text-container">
+                <p>Look how awesome! this is a</p>
+                <p>postcard that I creaded using</p>
+                <p>HTML5 and CSS3 during my</p>
+                <p>4Geeks Academy Course!</p>
+                <br>
+                <p>this is cool,can't wait to </p>
+                <p>start doing more stuff!</p>
+            </div>
+            <div class="input-container">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="comment" placeholder="Your Comment" required></textarea>
+            </div>
+            <div class="form-wrapper">   
+                <button class="submit-button">Send My Postcard</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
